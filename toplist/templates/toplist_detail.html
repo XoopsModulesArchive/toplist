@@ -1,0 +1,102 @@
+<{include file='db:toplist_navi.html'}>
+<table width="100%" cellspacing="1" class="outer">
+  <tr>
+    <th colspan="8" style="text-align:center;"><{$smarty.const._MD_TOPLIST_DETAILS_TO}> <{$website_name|replace:'http://www.':''}></th>
+  </tr>
+  <tr>
+    <td colspan="8" class="odd" style="text-align:center;">&nbsp;</td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+    <td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_WEBSITE_DESCRIPTION}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$website_description}></td>
+  </tr>
+  <tr>
+    <td colspan="8" class="odd" style="text-align:center;">&nbsp;</td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+    <td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_ONLINE_SINCE}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$online_since}></td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_ONLINE_SINCE_DAYS}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$online_since_day}></td>
+  </tr>
+  <tr>
+    <td colspan="8" class="odd">&nbsp;</td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_HIGHEST_VALUE}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><strong><{$highest_value}></strong></td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_LOWEST_VALUE}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$lowest_value}></td>
+  </tr>
+  <tr>
+    <td colspan="8" class="odd">&nbsp;</td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_LAST_HOUR}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$count_last_hour}></td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_TODAY}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><strong><{$count_today}></strong></td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_YESTERDAY}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$count_yesterday}></td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_WEEK}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$count_week}></td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_MONTH}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$count_month}></td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_SIX_MONTH}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$count_six_month}></td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_YEAR}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$count_year}></td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_ALWAYS}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><{$count_always}></td>
+  </tr>
+  <tr>
+    <td colspan="8" class="odd">&nbsp;</td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_AVERAGE}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><strong><{$count_average}></strong></td>
+  </tr>
+  <tr>
+    <td colspan="8" class="odd" style="text-align:center;">&nbsp;</td>
+  </tr>
+  <tr>
+  	<td width="50px;" class="odd">&nbsp;</td>
+  	<td width="250px;" class="odd"><{$smarty.const._MD_TOPLIST_URL}>:</td>
+    <td colspan="6" class="odd" style="text-align:left;"><a <{$follow}> href="<{$website_url}>"><{$website_name|replace:'http://www.':''}></a></td>
+  </tr>
+  <tr>
+    <td colspan="8" class="odd" style="text-align:center;">&nbsp;</td>
+  </tr>
+</table>

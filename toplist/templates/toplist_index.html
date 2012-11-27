@@ -1,0 +1,48 @@
+<{include file='db:toplist_navi.html'}>
+<br>
+<{if count($websites) gt 0}>
+<table width="100%" cellspacing="0" class="outer" border="0">
+  <tr>
+   <td width="100px;"><{$smarty.const._MD_TOPLIST_PLACE}></td>
+   <td width="100px;"><{$smarty.const._MD_TOPLIST_VISITOR}></td>
+   <td width="200px;"><{$smarty.const._MD_TOPLIST_SITE}></td>
+   <td width="200px;"><{$smarty.const._MD_TOPLIST_DETAILS}></td>
+  </tr>
+
+  <tr>
+  <td colspan="4"><hr /></td>
+  </tr>
+
+  <!-- Start links loop -->
+  <{foreach item=website from=$websites}>
+
+  <tr>
+    <td align="left"><{$website.place}>.</td>
+    <td align="left"><{$website.visitors}></td>
+    <td align="left"><a <{$follow}> href="<{$website.url}>" target="_blank"><{$website.name}></a><br /><{$website.description|substr:0:100}></td>
+    <td align="left"><a href="<{$xoops_url}>/modules/toplist/details.php?details=<{$website.profilid}>"><{$smarty.const._MD_TOPLIST_DETAILS_TO}> <{$website.name|replace:'http://www.':''}></a></td>
+  </tr>
+
+  <tr>
+  <td colspan="4"><hr /></td>
+  </tr>
+  <{/foreach}>
+  
+   <tr>
+    <td colspan="4" class="odd" style="text-align:center;">
+    <{section name=index_value start=1 loop=$index+1 step=1}>
+     <a href="<{$xoops_url}>/modules/toplist/index.php?output=<{$smarty.request.output}>&site=<{$smarty.section.index_value.index}>"><{$smarty.section.index_value.index}></a>
+    <{/section}>
+    </td>
+  </tr>
+</table>
+<{else}>
+<table width="100%" cellspacing="1" class="outer">
+  <tr>
+    <th colspan="8" style="text-align:center;"><{$smarty.const._MD_TOPLIST_NOVALUE}></th>
+  </tr>
+  <tr>
+    <td colspan="8" class="odd" style="text-align:center;">&nbsp;</td>
+  </tr>
+</table>
+<{/if}>
